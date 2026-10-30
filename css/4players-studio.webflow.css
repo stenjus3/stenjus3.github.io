@@ -2686,7 +2686,7 @@ a.w--current {
   font-style: normal;
   font-display: swap;
 }
-/* Text store buttons (no logo image) - added 2026-10-30 */
+/* Steam / PS VR2 store buttons: icon + white wordmark, like the logo buttons - 2026-10-30 */
 .button-blue.platform.textlogo {
   background-image: none;
   border: 8px solid #f4e6d3;
@@ -2694,11 +2694,17 @@ a.w--current {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  font-size: 22px;
-  letter-spacing: .08em;
+  gap: 14px;
+  color: #fff;
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: .04em;
   text-decoration: none;
 }
 .button-blue.platform.textlogo:hover { border-width: 5px; }
-.button-blue.platform.steam { color: #1b2838; }
-.button-blue.platform.playstation { color: #0050a5; }
+.button-blue.platform.textlogo .store-icon { height: 38px; width: auto; }
+@media screen and (max-width: 479px) {
+  .button-blue.platform.textlogo { font-size: 20px; gap: 8px; }
+  .button-blue.platform.textlogo .store-icon { height: 26px; }
+}
