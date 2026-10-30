@@ -2686,3 +2686,19 @@ a.w--current {
   font-style: normal;
   font-display: swap;
 }
+/* Text store buttons (no logo image) - added 2026-10-30 */
+.button-blue.platform.textlogo {
+  background-image: none;
+  border: 8px solid #f4e6d3;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: .08em;
+  text-decoration: none;
+}
+.button-blue.platform.textlogo:hover { border-width: 5px; }
+.button-blue.platform.steam { color: #1b2838; }
+.button-blue.platform.playstation { color: #0050a5; }
