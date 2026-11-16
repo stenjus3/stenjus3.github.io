@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Fri Apr 25 2025 17:28:12 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Fri Apr 25 2025 17:28:12 GMT+0000 (Coordinated Universal Time); Steam analytics section added 16 Nov 2026  -->
 <html data-wf-page="664b2c3e6e5bf652321e7e49" data-wf-site="5fb80e419f26142e61d22ffe">
 <head>
   <meta charset="utf-8">
@@ -79,10 +79,14 @@
           <h4><strong>Information We Collect</strong></h4>
           <p>With the recent updates to our services, we collect the following data through various Firebase services:</p>
           <ul role="list">
-            <li><strong>Firebase Analytics</strong>: We collect anonymized data related to user interactions, session duration, and in-game events to understand how users engage with our game and improve the overall experience.</li>
+            <li><strong>Firebase Analytics</strong> (Meta Quest and other standalone headsets): We collect anonymized data related to user interactions, session duration, and in-game events to understand how users engage with our game and improve the overall experience.</li>
+            <li><strong>Google Analytics</strong> (Steam / PC VR): The Steam version sends the same anonymized gameplay events to Google Analytics, the service behind Firebase Analytics. This covers mission results (win or loss, time, damage taken and its causes, difficulty), in-game purchases made with in-game coins, when the game is started, your sitting or standing mode and play height, the game version, your headset model, your computer's operating system, language and screen resolution, and your country as reported by Steam. Events are linked to a random ID created on your computer. It is <strong>not</strong> your Steam account, name or any other personal identifier.</li>
             <li><strong>Firebase Crashlytics</strong>: We collect crash reports to help us identify and fix technical issues that may affect the stability of our game.</li>
             <li><strong>Firebase Remote Config</strong>: We collect usage data to dynamically change the behavior and appearance of our game to optimize user experience without requiring app updates.</li>
           </ul>
+
+          <h5><strong>Your Choice</strong></h5>
+          <p>Gameplay analytics are collected only if you tap <strong>Agree</strong> on the data screen the game shows when you first set it up (players who set the game up before this screen existed see it once at the next start). If you tap <strong>Disagree</strong>, no analytics are collected or sent. You can change your answer at any time in the game: <strong>Settings &gt; Game &gt; Share gameplay data</strong> (On/Off). Switching it off stops all sending at once; on Steam it also deletes the random ID and any events not yet sent. The legal basis for analytics is your consent (GDPR Art. 6(1)(a)).</p>
 
           <h5><strong>Data We Receive from Meta</strong></h5>
           <p>When you log in with your Meta Horizon account, we receive the following in real time to support our in-game leaderboards and ensure age-appropriate content:</p>
@@ -96,7 +100,7 @@
           <h4><strong>Use of Your Personal Data</strong></h4>
           <p>The data collected is used to enhance user experience, improve game performance, and ensure the stability and security of the game. Specifically:</p>
           <ul role="list">
-            <li><strong>Firebase Analytics</strong> helps us understand player behavior and preferences.</li>
+            <li><strong>Firebase Analytics and Google Analytics</strong> help us understand player behavior and preferences, for example which missions are too hard, so we can balance the game.</li>
             <li><strong>Firebase Crashlytics</strong> aids in troubleshooting and fixing crashes.</li>
             <li><strong>Firebase Remote Config</strong> allows for real-time adjustments to game settings.</li>
             <li><strong>Meta Data (User ID, Display Name &amp; Avatar, Age Group)</strong> is used only to display in-game leaderboards in real time and to enforce age-appropriate features.</li>
@@ -105,19 +109,19 @@
           <h4><strong>Data Sharing and Disclosure</strong></h4>
           <p>We do not share or disclose your personal data to third parties, except as necessary for:</p>
           <ul role="list">
-            <li>The functioning of Firebase services (subject to Firebase’s own privacy policy).</li>
+            <li>The functioning of Firebase and Google Analytics, provided by Google Ireland Limited / Google LLC, which processes the analytics data on our behalf (subject to Google’s own privacy policy). Google may process this data in the United States; such transfers are covered by the EU-U.S. Data Privacy Framework, under which Google is certified. We have turned off Google Signals, ads personalization and Google's use of the data for its own modeling.</li>
             <li>Compliance with legal requirements.</li>
           </ul>
 
           <h4><strong>Data Retention and Deletion</strong></h4>
           <h5><strong>Firebase Data</strong></h5>
-          <p>We retain anonymized analytics and crash reports for up to 30 days and remove them thereafter.</p>
+          <p>Google keeps detailed analytics events according to its own retention settings. We keep a private copy of the anonymized gameplay events for as long as we need it to balance and improve the game. It is stored securely by 4Players-Studio and never sold or shared. Crash reports are kept for up to 30 days.</p>
           <h5><strong>Meta Data</strong></h5>
           <p>We do <strong>not</strong> retain any Meta-provided User ID, Display Name, Avatar, or Age Group; it exists only in memory during your session and is discarded immediately afterward.</p>
 
           <h4><strong>Data Deletion Requests</strong></h4>
           <h5><strong>How to Request Data Deletion</strong></h5>
-          <p>If you wish to request the deletion of your Firebase-collected data, please contact us at <a href="mailto:retronika-support@4players-studio.com">retronika-support@4players-studio.com</a> with the subject line <strong>"Data Deletion Request."</strong> Include your user ID and any relevant details. We will process your request within 30 days. Since we do not store any Meta data, no deletion is necessary for that information.</p>
+          <p>If you wish to request the deletion of your Firebase-collected data, please contact us at <a href="mailto:retronika-support@4players-studio.com">retronika-support@4players-studio.com</a> with the subject line <strong>"Data Deletion Request."</strong> Include your user ID if you have one, the platform (Steam, Meta Quest or other), and roughly when you played. Because analytics use a random ID that is not linked to your account, we may need these details to find your data. We will process your request within 30 days. Since we do not store any Meta data, no deletion is necessary for that information.</p>
 
           <h4><strong>Data Security</strong></h4>
           <h5><strong>Commitment to Security</strong></h5>
